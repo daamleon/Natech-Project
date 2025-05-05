@@ -31,7 +31,7 @@ function App() {
   }, []);
 
   return (
-    <div className="font-poppins">
+    <div className="font-poppins overflow-x-hidden">
       <Header />
       <HeroSection />
       <ServicesSection />

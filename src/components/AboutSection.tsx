@@ -4,14 +4,14 @@ import { Award, Users, ThumbsUp } from 'lucide-react';
 
 const AboutSection: React.FC = () => {
   return (
-    <section id="about" className="py-20 bg-gray-50">
+    <section id="about" className="py-12 md:px-8 bg-white">
       <div className="container mx-auto px-4">
         <SectionTitle 
           title="Tentang NatechProject" 
           highlight="NatechProject"
         />
         
-        <div className="flex flex-col md:flex-row gap-12 items-center">
+        <div className="flex flex-col md:flex-row gap-14 items-center">
           <div className="md:w-1/2">
             <div className="relative">
               <div className="absolute -inset-4 -skew-x-6 bg-orange-400 rounded-lg opacity-70"></div>

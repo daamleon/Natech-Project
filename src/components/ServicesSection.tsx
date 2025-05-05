@@ -6,7 +6,7 @@ import SectionTitle from './SectionTitle';
 const ServicesSection: React.FC = () => {
   return (
     <section id="services" className="py-20 bg-gray-50">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-8">
         <SectionTitle 
           title="Layanan Kami" 
           subtitle="Kami menyediakan berbagai layanan untuk membantu mewujudkan ide dan kebutuhan teknologi Anda."

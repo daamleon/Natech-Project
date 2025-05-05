@@ -18,7 +18,6 @@ const ContactSection: React.FC = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Form submission logic would go here
     console.log('Form submitted:', formData);
     alert('Pesan Anda telah terkirim. Kami akan segera menghubungi Anda!');
     setFormData({ name: '', contact: '', project: '', description: '' });
@@ -26,7 +25,7 @@ const ContactSection: React.FC = () => {
 
   return (
     <section id="contact" className="py-20">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-8">
         <SectionTitle 
           title="Hubungi Kami" 
           subtitle="Diskusikan ide project Anda dengan tim kami dan dapatkan solusi terbaik."

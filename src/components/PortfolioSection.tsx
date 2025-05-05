@@ -4,8 +4,8 @@ import PortfolioTabs from './PortfolioTabs';
 
 const PortfolioSection: React.FC = () => {
   return (
-    <section id="portfolio" className="py-20">
-      <div className="container mx-auto px-4">
+    <section id="portfolio" className="">
+      <div className="container mx-auto px-8 py-12 overflow-x-hidden">
         <SectionTitle 
           title="Portofolio" 
           subtitle="Beberapa proyek terbaik yang telah kami kerjakan untuk klien-klien kami."

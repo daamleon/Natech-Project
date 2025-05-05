@@ -15,26 +15,32 @@ const PortfolioTabs: React.FC = () => {
       <div className="flex justify-center mb-12">
         <div className="inline-flex bg-gray-100 p-1.5 rounded-xl">
           <button
-            className={`px-6 py-2.5 rounded-lg transition-all duration-300 ${
-              activeTab === 'all' ? 'bg-white shadow-lg text-orange-400 font-medium scale-105' : 'text-gray-600 hover:text-gray-800'
+            className={`md:px-6 md:py-2.5 px-4 py-1.5 rounded-lg transition-all duration-300 ${
+              activeTab === "all"
+                ? "bg-white shadow-lg text-orange-400 font-medium scale-105"
+                : "text-gray-600 hover:text-gray-800"
             }`}
-            onClick={() => setActiveTab('all')}
+            onClick={() => setActiveTab("all")}
           >
             Semua
           </button>
           <button
-            className={`px-6 py-2.5 rounded-lg transition-all duration-300 ${
-              activeTab === 'programming' ? 'bg-white shadow-lg text-orange-400 font-medium scale-105' : 'text-gray-600 hover:text-gray-800'
+            className={`md:px-6 md:py-2.5 px-4 py-1.5 rounded-lg transition-all duration-300 ${
+              activeTab === "programming"
+                ? "bg-white shadow-lg text-orange-400 font-medium scale-105"
+                : "text-gray-600 hover:text-gray-800"
             }`}
-            onClick={() => setActiveTab('programming')}
+            onClick={() => setActiveTab("programming")}
           >
             Programming
           </button>
           <button
-            className={`px-6 py-2.5 rounded-lg transition-all duration-300 ${
-              activeTab === 'electronics' ? 'bg-white shadow-lg text-orange-400 font-medium scale-105' : 'text-gray-600 hover:text-gray-800'
+            className={`md:px-6 md:py-2.5 px-4 py-1.5 rounded-lg transition-all duration-300 ${
+              activeTab === "electronics"
+                ? "bg-white shadow-lg text-orange-400 font-medium scale-105"
+                : "text-gray-600 hover:text-gray-800"
             }`}
-            onClick={() => setActiveTab('electronics')}
+            onClick={() => setActiveTab("electronics")}
           >
             Elektronika
           </button>
@@ -52,19 +58,19 @@ const PortfolioTabs: React.FC = () => {
 
 const PortfolioItem: React.FC<{ item: PortfolioItemType }> = ({ item }) => {
   return (
-    <div className="group relative overflow-hidden rounded-2xl bg-white transition-all duration-500 hover:shadow-2xl hover:-translate-y-2">
+    <div className="group relative overflow-hidden rounded-2xl bg-white transition-all duration-500 shadow-lg hover:shadow-xl hover:-translate-y-2">
       <div className="relative h-64 overflow-hidden">
-        <img 
-          src={item.image} 
-          alt={item.title} 
+        <img
+          src={item.image}
+          alt={item.title}
           className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500">
           <div className="absolute bottom-0 left-0 right-0 p-6 transform translate-y-6 group-hover:translate-y-0 transition-transform duration-500">
             <div className="flex flex-wrap gap-2 mb-4">
               {item.technologies.map((tech, index) => (
-                <span 
-                  key={index} 
+                <span
+                  key={index}
                   className="text-xs font-medium bg-orange-400/90 text-white px-3 py-1 rounded-full backdrop-blur-sm"
                 >
                   {tech}
@@ -72,7 +78,8 @@ const PortfolioItem: React.FC<{ item: PortfolioItemType }> = ({ item }) => {
               ))}
             </div>
             <p className="text-white text-sm mb-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+              eiusmod tempor incididunt ut labore.
             </p>
             <button className="inline-flex items-center gap-2 text-white text-sm font-medium hover:text-orange-400 transition-colors">
               Lihat Detail
@@ -84,7 +91,9 @@ const PortfolioItem: React.FC<{ item: PortfolioItemType }> = ({ item }) => {
       <div className="p-6">
         <div className="flex items-start justify-between">
           <div>
-            <h3 className="text-lg font-bold text-gray-900 mb-1">{item.title}</h3>
+            <h3 className="text-lg font-bold text-gray-900 mb-1">
+              {item.title}
+            </h3>
             <p className="text-sm text-gray-500 capitalize">{item.category}</p>
           </div>
           <div className="w-2 h-2 rounded-full bg-orange-400"></div>

@@ -6,7 +6,7 @@ const HeroSection: React.FC = () => {
   return (
     <section 
       id="home" 
-      className="relative pt-28 pb-20 min-h-screen flex items-center"
+      className="relative pt-28 pb-20 min-h-screen flex items-center md:p-8"
       style={{
         backgroundImage: 'linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.5)), url(https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)',
         backgroundSize: 'cover',

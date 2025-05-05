@@ -38,7 +38,7 @@ const Header: React.FC = () => {
         isScrolled ? 'bg-white/90 shadow-lg py-3' : 'bg-transparent py-5'
       }`}
     >
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-8">
         <nav className="flex justify-between items-center">
           {/* Logo */}
           <a 
@@ -88,7 +88,7 @@ const Header: React.FC = () => {
           isMenuOpen ? 'translate-x-0' : 'translate-x-full'
         }`}
       >
-        <div className="container mx-auto px-4 py-20">
+        <div className="container mx-auto px-4 py-20 bg-white">
           <div className="flex flex-col space-y-6">
             {NAV_ITEMS.map((item, index) => (
               <a 
