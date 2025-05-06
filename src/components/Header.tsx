@@ -84,7 +84,7 @@ const Header: React.FC = () => {
 
       {/* Mobile Navigation */}
       <div 
-        className={`fixed inset-0 bg-white/95 backdrop-blur-sm transition-transform duration-300 ease-in-out transform md:hidden ${
+        className={`fixed inset-0 bg-white/95 h-screen backdrop-blur-sm transition-transform duration-300 ease-in-out transform md:hidden ${
           isMenuOpen ? 'translate-x-0' : 'translate-x-full'
         }`}
       >
@@ -105,15 +105,6 @@ const Header: React.FC = () => {
               <Button className="w-full justify-center text-lg py-4">
                 Konsultasi Gratis
               </Button>
-            </div>
-          </div>
-          
-          {/* Mobile Contact Info */}
-          <div className="mt-12 pt-12 border-t border-gray-100">
-            <div className="space-y-4 text-gray-600">
-              <p>📧 hello@natechproject.com</p>
-              <p>📱 +62 812 3456 7890</p>
-              <p>⏰ Senin - Jumat: 09:00 - 17:00</p>
             </div>
           </div>
         </div>

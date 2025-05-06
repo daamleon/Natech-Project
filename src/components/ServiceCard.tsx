@@ -8,7 +8,6 @@ interface ServiceCardProps {
 }
 
 const ServiceCard: React.FC<ServiceCardProps> = ({ title, description, icon }) => {
-  // Dynamically get the icon from lucide-react
   const IconComponent = Icons[icon as keyof typeof Icons] || Icons.Zap;
 
   return (

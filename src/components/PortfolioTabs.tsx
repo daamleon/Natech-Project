@@ -13,11 +13,11 @@ const PortfolioTabs: React.FC = () => {
   return (
     <div>
       <div className="flex justify-center mb-12">
-        <div className="inline-flex bg-gray-100 p-1.5 rounded-xl">
+        <div className="inline-flex bg-gray-100 p-2.5 md:p-3 md:rounded-3xl rounded-2xl gap-1.5">
           <button
-            className={`md:px-6 md:py-2.5 px-4 py-1.5 rounded-lg transition-all duration-300 ${
+            className={`md:px-6 md:py-2.5 px-2 py-1.5 md:rounded-2xl rounded-xl transition-all duration-300  text-s md:text-lg ${
               activeTab === "all"
-                ? "bg-white shadow-lg text-orange-400 font-medium scale-105"
+                ? "bg-white shadow-lg text-orange-400 font-medium text-s md:text-lg scale-"
                 : "text-gray-600 hover:text-gray-800"
             }`}
             onClick={() => setActiveTab("all")}
@@ -25,9 +25,9 @@ const PortfolioTabs: React.FC = () => {
             Semua
           </button>
           <button
-            className={`md:px-6 md:py-2.5 px-4 py-1.5 rounded-lg transition-all duration-300 ${
+            className={`md:px-6 md:py-2.5 px-2 py-1.5 md:rounded-2xl rounded-xl transition-all duration-300  text-s md:text-lg ${
               activeTab === "programming"
-                ? "bg-white shadow-lg text-orange-400 font-medium scale-105"
+                ? "bg-white shadow-lg text-orange-400 font-medium scale-105 text-s md:text-lg "
                 : "text-gray-600 hover:text-gray-800"
             }`}
             onClick={() => setActiveTab("programming")}
@@ -35,9 +35,9 @@ const PortfolioTabs: React.FC = () => {
             Programming
           </button>
           <button
-            className={`md:px-6 md:py-2.5 px-4 py-1.5 rounded-lg transition-all duration-300 ${
+            className={`md:px-6 md:py-2.5 px-2 py-1.5 md:rounded-2xl rounded-xl transition-all duration-300 text-s md:text-lg  ${
               activeTab === "electronics"
-                ? "bg-white shadow-lg text-orange-400 font-medium scale-105"
+                ? "bg-white shadow-lg text-orange-400 font-medium text-s md:text-lg scale-105"
                 : "text-gray-600 hover:text-gray-800"
             }`}
             onClick={() => setActiveTab("electronics")}
